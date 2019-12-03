@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 연습</title>
+</head>
+<body>
+	<!-- html주석 -->
+	<h1>Table 연습</h1>
+	
+	<table border="1">
+	<!-- 테이블은 내부에 caption thead, tbody, tfoot을 담을 수 있다 -->
+	<thead>
+	<tr><!-- 테이블의 행, td를 여러개 담을 수 있다 -->
+		<th>이름</th>
+		<th>나이</th>
+		<th>점수</th> <!-- th는 thead내의 tr에서 사용 -->
+	</tr>
+	</thead>
+	
+	<tbody>
+	<tr>
+		<td>홍길동</td>
+		<td>30</td>
+		<td>80</td>
+	</tr>
+	
+	<tr>
+		<td>장길산</td>
+		<td>40</td>
+		<td>85</td>
+	</tr>
+	
+	</tbody>
+	
+	<tfoot>
+	<tr>
+		<td>총점</td>
+		<td></td>
+		<td>85</td>
+	</tr>
+	</tfoot>
+	</table>
+	
+	<!-- spanning연습 -->
+	<table border="1">
+	<tr>
+		<td>(1,1)</td>
+	
+		<td colspan = "2">(1,2))</td>
+	</tr>
+	<tr>
+		<td rowspan = "2">(2,1)</td>
+		<td>(2,2)</td>
+		<td>(2,3)</td>
+	</tr>
+	<tr>
+	
+		<td>(3,2)</td>
+		<td>(3,3)</td>
+	</tr>
+	
+	</table>
+</body>
+</html>

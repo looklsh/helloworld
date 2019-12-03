@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HelloWorld</title>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<h3>Static HTML Page</h3>
+	<p>이것은 정적 HTML로 만들어진 페이지입니다</p>
+
+	<hr />
+	<!-- hr : 가로줄 (구획 나누기) -->
+	<!-- a:링크태그 -->
+	<!-- table.html로 링크 걸어봅시다 -->
+	<a href="table.html">테이블 연습</a>
+
+
+<h3>Get 전송</h3>
+<!-- helloservlet으로 get전송(a태그이용) -->
+<a href="/HelloWorld/hs?name=Servlet">HelloServlet 호출</a>
+<h3>post 전송</h3>
+<form action="/HelloWorld/hs" method="post">
+<label for="last_name">성</label>
+<input name="last_name" type= "text"> <br/>
+<label for="first_name">이름</label>
+<input type="text" name="first_name"><br>
+<input type="reset" value="재작성">
+<input type="submit" value="전송">
+</form>
+
+</body>
+</html>
